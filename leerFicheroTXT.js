@@ -1,6 +1,7 @@
 function gestionarFicheroTXT(txtDoc){
     let contenido = "<table><tr><th>Nombre</th><th>Distrito</th><th>Codigo</th></tr>";
     let registros = txtDoc.split(/\r?\n|\r/);
+    console.log("longitud: "+registros.length);
     for (let i = 0; i < registros.length; i++) 
     {
         let campos = registro[i].split(";");
