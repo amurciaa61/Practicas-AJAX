@@ -7,12 +7,8 @@ function loadLDocA(fichero,tipo)
     http.addEventListener('load', (event) => {  //Cuando se reciba la respuesta, se ejecuta esta función
         if(http.readyState == 4 && http.status === 200) {
             if(tipo == "xml")
-            {
-                console.log("es xml");
                 gestionarFicheroXML(http.responseXML)
-            }
             else
-                console.log(tipo," es txt");
 			    gestionarFicheroTXT(http.responseText)
 		}})
 }

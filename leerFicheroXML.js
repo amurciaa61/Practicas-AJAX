@@ -7,9 +7,8 @@ function gestionarFicheroXML(xmlDoc){
 	
 }
 
-
-document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
-	 
-	console.log("ha pulsado");
+//document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
+document.querySelector("#boton").addEventListener("click",()=>{
+	
     let xmlDoc = loadLDocA("leerFicheroXML.xml","xml");
 })
