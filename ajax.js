@@ -8,9 +8,11 @@ function loadLDocA(fichero,tipo)
         if(http.status === 200) {
             if(tipo == "xml")
             {
+                Console.log("es xml");
                 gestionarFicheroXML(http.responseXML)
             }
             else
+                Console.log("es txt");
 			    gestionarFicheroTXT(http.responseText)
 		}})
 }
