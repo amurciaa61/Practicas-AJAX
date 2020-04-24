@@ -14,6 +14,6 @@ function gestionarFicheroTXT(txtDoc){
 }
 
 document.querySelector("#botonTXT").addEventListener("click",()=>{
-	
+	console.log("llego");
     let txtDoc = loadLDocA("leerFicheroTXT.txt","txt");
 })
