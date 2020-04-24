@@ -6,10 +6,12 @@ function gestionarFicheroTXT(txtDoc){
     for (let i = 0; i < registros.length; i++) 
     {
         let campos = registros[i].split(";");
+        contenido += "<tr>";
         for (let j = 0;j < 3;j++)
         {
-            contenido += "<tr><td>" + campos[j] + "</td></tr>";
+            contenido += "<td>" + campos[j] + "</tr>";
         } 
+        contenido += "</tr>";
     }
     contenido += "</tr></th></table>"
     document.getElementById('ficheroTXT').innerHTML = contenido;	
