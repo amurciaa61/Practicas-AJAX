@@ -12,7 +12,7 @@ function loadLDocA(fichero,tipo)
                 gestionarFicheroXML(http.responseXML)
             }
             else
-                console.log("es txt");
+                console.log(tipo," es txt");
 			    gestionarFicheroTXT(http.responseText)
 		}})
 }
