@@ -9,7 +9,7 @@ function gestionarFicheroTXT(txtDoc){
         contenido += "<tr>";
         for (let j = 0;j < 3;j++)
         {
-            contenido += "<td>" + campos[j] + "</tr>";
+            contenido += "<td>" + campos[j] + "</td>";
         } 
         contenido += "</tr>";
     }
