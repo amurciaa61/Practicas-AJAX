@@ -4,7 +4,7 @@ function gestionarFicheroTXT(txtDoc){
     console.log("longitud: "+registros.length);
     for (let i = 0; i < registros.length; i++) 
     {
-        let campos = registro[i].split(";");
+        let campos = registros[i].split(";");
         for (let j = 0;j < 3;j++)
         {
             contenido += "<tr><td>" + campos[j] + "</td></tr>";
