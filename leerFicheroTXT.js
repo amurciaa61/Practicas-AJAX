@@ -13,7 +13,6 @@ function gestionarFicheroTXT(txtDoc){
     document.getElementById('ficheroTXT').innerHTML = contenido;	
 }
 
-
 document.querySelector("#botonTXT").addEventListener("click",()=>{
 	console.log("llego");
     let txtDoc = loadLDocA("leerFicheroTXT.txt","txt");
